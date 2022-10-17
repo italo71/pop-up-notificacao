@@ -17,18 +17,33 @@
     <link rel="stylesheet" href="https://siga.arcoconsultoria.com/SIGA/libsiga/plugins/datatables/datatables.min.css">
     <link rel="stylesheet" href="https://siga.arcoconsultoria.com/SIGA/libsiga/plugins/bootstrap/css/bootstrap5Min.css">
     <title>Document</title>
+    <style>
+        #btn:hover{
+            background-color: red;
+            color: white;
+            box-shadow: none;
+        }
+    </style>
 </head>
 
 <body>
+
     <div class="card" style="width: 1138px; height: 586px; margin: 10px auto 0 auto;">
+        <div class="col-1">
+            <button class="btn" id="btn" onclick="parent.ebfFlowExecute('Fechar formulario')" style="box-shadow: none; border: none; position: absolute; right: 5px; height: 25px; padding: -6px auto 0 auto;">
+                X
+            </button>
+        </div>
+
         <img alt="Imagem" id="img" width="1138" height="586" src="">
     </div>
-    <script>
+
+    <!-- <script>
         function trocarImg(caminho){
             document.getElementById('img').setAttribute('src', `${caminho}`);
         }
-    </script>
-    
+    </script> -->
+
     <!-- Jquery Core Js -->
     <script src="https://siga.arcoconsultoria.com/SIGA/libsiga/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap Core Js -->
